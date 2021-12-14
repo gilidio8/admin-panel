@@ -25,7 +25,7 @@ import { AlterNewsComponent } from '../alter-news/alter-news.component';
       }
 
     alterUser(usuario: Usuario): Observable<Usuario>{
-        return this.http.post<Usuario>(this.baseUrl, usuario);
+        return this.http.put<Usuario>(this.baseUrl, usuario);
       }
       
     openUserNewModal(id: number, tela: number){
